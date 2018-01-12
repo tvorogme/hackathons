@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.box {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_href {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box-right {
+    position: relative;
+    width: 50%;
+    float: right;
+}
+
+.description,
+.main_description {
+    font-size: 13px;
+}
+
+.box-left {
+    float: left;
+    position: relative;
+}
+
+.box-left, .box-right {
+    width: calc(50% - 51px);
+    flex-direction: column;
+}
+
+h1 {
+    color: #090909;
+}
+
+.dates {
+    display: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.see-more {
+    font-size: 13px;
+}
+
+.notification {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    height: 20px;
+    padding: 8px 25px 8px 25px;
+    color: #fff;
+    font-size: 15px;
+    width: 108px;
+    font-weight: 700;
+}
+
+.camp_autumn_image .notification {
+    background-color: grey;
+}
+
+/*#613D8D*/
+.camp_winter_image .notification {
+    background: rgb(67, 180, 152);
+}
+
+.camp_autumn_image .notification {
+    background: grey;
+}
+
+.camp_spring_image .notification {
+    background: #EF8B6A;
+}
+
+.camp_summer_image .notification {
+    background: #613D8D;
+}
+
+.camp_winter_image:hover .see-more {
+    color: rgb(67, 180, 152);
+}
+
+.camp_autumn_image:hover .see-more {
+    color: grey;
+}
+
+.camp_spring_image:hover .see-more {
+    color: #EF8B6A;
+}
+
+.camp_summer_image:hover .see-more {
+    color: #613D8D;
+}
+
+.text {
+    padding: 48px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    border: 1px solid #e5e5e5;
+}
+
+a {
+    color: inherit;
+}
+
+@media screen and (min-width: 900px) {
+    .see-more {
+        position: absolute;
+        bottom: 17px;
+    }
+
+    .box {
+        height: 260px;
+        border-left: 0;
+    }
+
+    .camp_autumn_image .box-left {
+        background: url('../img/camp_autumn.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .camp_winter_image .box-left {
+        background: url('../img/camp_winter.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .camp_summer_image .box-left {
+        background: url('../img/camp_summer.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .camp_spring_image .box-left {
+        background: url('../img/camp_spring.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .half_screen_wrapper {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .half_screen {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 450px;
+    }
+
+    .half_screen h4 {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        text-align: center;
+    }
+
+    .main_description {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .see-more {
+        padding-top: 3px;
+    }
+
+    .notification {
+        display: none;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .box {
+        border-top: 0;
+    }
+
+    .box-left {
+        height: 10px;
+        background-position: top;
+    }
+
+    .box-left, .box-right {
+        width: 100%;
+    }
+
+    .camp_autumn_image .box-left {
+        background: grey;
+    }
+
+    .camp_summer_image .box-left {
+        background: #613D8D;
+    }
+
+    .camp_spring_image .box-left {
+        background: #EF8B6A;
+    }
+
+    .camp_winter_image .box-left {
+        background: rgb(67, 180, 152);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .notification {
+        display: block;
+    }
+
+    .main_description {
+        display: none;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .text {
+        border: none;
+        width: 190px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .main {
+        min-height: initial;
+    }
+
+    .dates {
+        display: block;
+        font-size: 15px;
+    }
+
+    .box {
+        height: 190px;
+        width: 280px;
+        margin-bottom: 10px;
+        box-sizing: content-box;
+        padding-bottom: 90px;
+        margin-top: 18px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    }
+
+    .see-more {
+        display: none;
+    }
+
+    .camp_winter_image .box-left,
+    .camp_spring_image .box-left,
+    .camp_summer_image .box-left,
+    .camp_autumn_image .box-left {
+        background: none;
+    }
+}
