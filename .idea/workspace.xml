@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6c795b9-b006-4923-a42e-a6e469a36e64" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/img/camp_autumn.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/camp_spring.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/camp_summer.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/camp_winter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="d6c795b9-b006-4923-a42e-a6e469a36e64" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gotosite" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
